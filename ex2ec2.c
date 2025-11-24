@@ -13,14 +13,16 @@ float serieHarmonica(int N){
 void main(){
     int N = 0;
     printf("Calculador de série harmônica");
-    printf("\n\nInsira um número inteiro positivo");
-    
-    while(scanf("%d", &N) != 1 || N <= 0){
-        int c;
-        while ((c = getchar()) != '\n' && c != EOF);
 
-        printf("O número tem que ser um inteiro positivo. Bote um número válido.\n\n");
-    }
+    do{
+        printf("\n\nInsira um número inteiro positivo: ");
+        scanf("%d", &N);
+        if (N <= 0){
+            printf("//////////////////////////////\n");
+            printf("O número deve ser positivo E diferente de zero..");
+            printf("\n//////////////////////////////");
+        }
+    }while (N <= 0);
 
     float resultado = serieHarmonica(N);
 
