@@ -17,8 +17,9 @@ void main(){
     printf("Insira um número para calcular sua fatoração e a série harmônica");
     scanf("%d", &num);
 
-    double resultado = factorialAndHarmonical(num);
+    double resultado = Fatorial_Harmonica(num);
 
-    printf("The number was: %d. The factorial and harmonical series resulted: %.6lf", num, resultado);
+    printf("O número foi: %d. O resultado da série foi: %.6lf", num, resultado);
     
 }
+
